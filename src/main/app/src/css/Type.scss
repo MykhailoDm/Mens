@@ -1,0 +1,86 @@
+.text-style {
+
+  font-weight: bold;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+
+  .logo-styling {
+
+    display: block;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .site-name {
+
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .promotion {
+
+    font-size: 1.6em;
+    text-align: center;
+  }
+}
+
+.practice-starts {
+
+  display: inline-flex;
+  padding: 5px;
+  font-size: 2em;
+
+  p {
+
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  p span {
+    transition: all 0.3s;
+  }
+  p::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+  }
+  p:hover span {
+    letter-spacing: 2px;
+  }
+  p:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+  }
+  p:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+  }
+}
