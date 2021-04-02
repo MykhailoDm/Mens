@@ -1,0 +1,94 @@
+
+.keyboard-base {
+  max-width: 1085px;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(30, 30px);
+  grid-template-rows: repeat(5, 60px);
+  grid-gap: 5px;
+  font-family: 'Poppins',sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.key {
+  border: 2px solid black;
+  grid-column: span 2;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 17px;
+  background-color: rgb(26, 26, 26);
+  box-shadow: rgba(0, 0, 0, 0.5) -7px -7px 14px 0px inset, rgba(58, 58, 58, 0.376) 7px 7px 14px 0px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) -7px -7px 14px 0px inset, rgba(58, 58, 58, 0.376) 7px 7px 14px 0px inset;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+.delete {
+  grid-column: span 4;
+}
+
+.tab {
+  grid-column: span 3;
+}
+
+.backslash {
+  grid-column: span 3;
+}
+
+.capslock {
+  grid-column: span 4;
+}
+
+.return {
+  grid-column: span 4;
+}
+
+.leftshift {
+  grid-column: span 5;
+}
+
+.rightshift {
+  grid-column: span 5;
+}
+
+.leftctrl {
+  grid-column: span 3;
+}
+
+.command {
+  grid-column: span 3;
+  font-size: 14px;
+}
+
+.space {
+  grid-column: span 13;
+}
+
+@media screen and (max-width: 1200px){
+
+  .keyboard-base {
+
+    display: none;
+  }
+}
+
+.touch-type {
+
+  color: #370000;
+}
+
+.correct {
+
+  background-color: green;
+}
+
+.not-correct {
+
+  background-color: rgb(188, 0, 0);
+}

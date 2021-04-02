@@ -1,0 +1,29 @@
+.box-style {
+
+  width: 90%;
+  height: 20px;
+  border-radius: 4px;
+  position: relative;
+  background-color: rgba(109, 107, 107, 0.3);
+  transition: 0.3s all;
+  font-size: 20px;
+  color: #FFFFFF;
+  display: block;
+  padding: 2px;
+  margin: 4px auto 20px;
+}
+
+.box-style:hover {
+  background-color: rgba(134, 134, 134, 0.45);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.fade-in {
+
+  animation: fadeIn ease 0.7s;
+}
+
+@keyframes fade-in {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
