@@ -3,7 +3,6 @@ import StaticTextBox from "./StaticTextBox";
 import { useState, useEffect } from 'react';
 import InputTextBox from "./InputTextBox";
 import Button from "./Button";
-import Keyboard from "./Keyboard";
 
 function LearnSection() {
 

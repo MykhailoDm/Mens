@@ -1,0 +1,29 @@
+insert into TEXTUAL_INFORMATION values('0','
+li {
+  width: 200px;
+  min-height: 250px;
+  border: 1px solid #000;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px;
+  zoom: 1;
+  *display: inline;
+  _height: 250px;
+}
+');
+
+insert into TEXTUAL_INFORMATION values('1','
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+');
+
+insert into TEXTUAL_INFORMATION values('2','
+def sum_eq_n?(arr, n)
+  return true if arr.empty? && n == 0
+  arr.product(arr).reject { |a,b| a == b }.any? { |a,b| a + b == n }
+end
+');

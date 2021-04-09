@@ -3,17 +3,21 @@ import logo from '../components/logo.svg';
 import Button from "./Button";
 import { useState } from 'react';
 import LearnSection from "./LearnSection";
+import PracticeSection from "./PracticeSection";
 
 function Type() {
 
     const [showContentLearn, setShowContentLearn] = useState(false);
+    const [showContentPractice, setShowContentPractice] = useState(false);
 
     function showLearn() {
         setShowContentLearn(!showContentLearn);
+        setShowContentPractice(false);
     }
 
     function log() {
-        console.log("hello")
+        setShowContentPractice(!showContentPractice);
+        setShowContentLearn(false);
     }
 
     return (
@@ -26,6 +30,7 @@ function Type() {
                 <Button text={'Practice'} functionPassed={log}/>
             </div>
             { showContentLearn && <LearnSection /> }
+            { showContentPractice && <PracticeSection />}
 
         </div>
     );
