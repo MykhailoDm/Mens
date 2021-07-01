@@ -11,7 +11,7 @@ function PracticeSection() {
     const [typeText,setTypeText] = useState('');
 
     useEffect(() => {
-        fetch('http://localhost:8080/api/text')
+        fetch('https://mens-sap.herokuapp.com/api/text')
             .then(response => response.json())
             .then(data => {
                 setTypeText(data.text);
@@ -20,7 +20,7 @@ function PracticeSection() {
 
     function reload() {
 
-        fetch('http://localhost:8080/api/text')
+        fetch('https://mens-sap.herokuapp.com/api/text')
             .then(response => response.json())
             .then(data => {
                 setTypeText(data.text);
