@@ -15,7 +15,7 @@ public class TextualController {
     @RequestMapping("/api/text")
     public TextualInformation returnText() {
         long count = textualRepo.count();
-        long id = (long) (Math.random()*count-0.1);
+        long id = (long) (Math.random()*count) + 1;
         return textualRepo.findById(id).get();
     }
 
