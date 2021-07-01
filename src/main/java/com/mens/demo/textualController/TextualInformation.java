@@ -13,6 +13,13 @@ public class TextualInformation {
     private Long id;
     private String text;
 
+    public TextualInformation() {
+    }
+
+    public TextualInformation(String text) {
+        this.text = text;
+    }
+
     public Long getId() {
         return id;
     }
