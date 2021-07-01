@@ -11,7 +11,7 @@ public class TextualController {
     @Autowired
     TextualRepo textualRepo;
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "http://mens-sap.herokuapp.com/")
     @RequestMapping("/api/text")
     public TextualInformation returnText() {
         long count = textualRepo.count();
